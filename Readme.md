@@ -1,1 +1,2 @@
-Unsplash Clone purely in Html and Css.
+Unsplash Clone purely in Html and CSS.
+
