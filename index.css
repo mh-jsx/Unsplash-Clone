@@ -1,0 +1,375 @@
+/* colors hex #FFFFFF #767676 #3CB46E #EEEEEE #767676*/
+body {
+  font-family: Helvetica;
+  font-weight: 300;
+  background-color: #ffffff;
+  font-size: 15px;
+  margin: 0;
+}
+.top-nav {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+/* logo */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.nav-logo img {
+  width: 32px;
+}
+.nav-logo p {
+  margin-left: 10px;
+  display: inline;
+  font-size: 15px;
+  font-weight: 700;
+}
+.nav-logo small {
+  font-size: 13px;
+  font-weight: 500;
+}
+/* end */
+
+/* top search */
+.nav-search {
+  width: 40%;
+  display: flex;
+}
+@media (min-width: 1367px) {
+  .nav-search {
+    width: 58%;
+  }
+}
+.nav-search input {
+  height: 38px;
+  width: 100%;
+  font-size: 14px;
+  background-color: #eeeeee;
+  border: 0;
+  border-radius: 100px;
+  /* bg */
+  background-image: url(content/search.png);
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position-y: center;
+  background-position-x: 13px;
+  padding-left: 45px;
+}
+.nav-search input::placeholder {
+  font-size: 14px;
+}
+.nav-search input:hover {
+  box-shadow: 0 0 1.5px #767676;
+}
+.nav-search input:focus {
+  outline: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 1.5px #767676;
+}
+/* end */
+
+/* Top Nav Links */
+
+/* leftLinks */
+.nav-linksLeft {
+  display: flex;
+  align-items: center;
+}
+
+.nav-linksLeft a {
+  text-decoration: none;
+  color: #767676;
+  margin-right: 20px;
+}
+.nav-linksLeft a:hover {
+  color: #000;
+}
+.nav-linksLeft sup {
+  background: linear-gradient(to right, #f3303c, #856ae0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 10px;
+}
+
+/* drop down icon */
+.dropdown {
+  align-items: center;
+}
+
+.dropdown img {
+  width: 30px;
+  margin-left: -40px;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+/* dropdown menu */
+.menu {
+  display: none;
+  z-index: 1;
+  width: 250px;
+  height: 510px;
+  background-color: #111111;
+  position: absolute;
+  right: 195px;
+  top: 55px;
+  border-radius: 3px;
+  text-align: left;
+}
+.menu-toggle {
+  display: block;
+}
+.menu::after {
+  position: absolute;
+  left: 5%;
+  top: -6px;
+  width: 0;
+  height: 0;
+  content: "";
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #000000;
+}
+.menu a {
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  color: #f7f7f7;
+  margin: 20px 15px;
+}
+.menu span {
+  display: block;
+  margin: 15px;
+  height: fit-content;
+}
+.menu img {
+  margin-right: 20px;
+  width: 20px;
+}
+.menu hr {
+  background-color: #f7f7f7;
+  height: 0.1px;
+}
+.list {
+  margin: 15px;
+}
+.list a {
+  font-size: 12px;
+  display: inline;
+  margin: 15px 2px;
+}
+.menu a:hover {
+  color: #d1d1d1;
+}
+
+/* submit photo button */
+.btn-submit {
+  display: flex;
+}
+.btn-submit a {
+  text-decoration: none;
+  color: #767676;
+  border: rgba(118, 118, 118, 0.3) solid 1px;
+  padding: 7px 10px;
+  border-radius: 4px;
+}
+.btn-submit a:hover {
+  border: #000 1px solid;
+  color: #000;
+}
+
+/* rightLinks */
+
+.nav-linkRight a {
+  text-decoration: none;
+  color: #767676;
+}
+
+/*  */
+.horizontal-line {
+  border-left: 1px solid #d1d1d1;
+  height: 35px;
+}
+
+/* button join  #3CB46E*/
+.btn-join {
+  display: flex;
+}
+.btn-join a {
+  text-decoration: none;
+  background-color: #3cb46e;
+  color: #ffffff;
+  padding: 7px 10px;
+  border-radius: 4px;
+}
+/* end */
+
+/* Categories */
+
+.categories {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  justify-items: center;
+}
+.categories a {
+  text-decoration: none;
+  color: #000;
+}
+.categories-items {
+  white-space: nowrap;
+  overflow: hidden;
+  flex: 85%;
+}
+
+.categories-items p {
+  position: relative;
+  right: 0px;
+  text-align: center;
+  display: inline;
+  transition: right 1s;
+  -webkit-transition: right 0.5s;
+}
+
+.categories-items a {
+  text-align: center;
+  display: inline-block;
+  padding: 0 13px;
+  overflow: hidden;
+  color: #767676;
+}
+.categories-items a:hover {
+  color: #000;
+}
+.slideRight img {
+  width: 16px;
+  transform: rotate(270deg);
+  margin-left: -30px;
+}
+.slideLeft img {
+  width: 16px;
+  transform: rotate(90deg);
+}
+
+/* end Categories */
+
+/* hero */
+
+.hero {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(content/hero2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+.hero-content {
+  margin: 0 auto;
+  color: white;
+  width: 60%;
+}
+.hero-content h1 {
+  font-size: 46px;
+}
+.hero-content p {
+  font-size: 18px;
+}
+.hero-content p > span {
+  font-size: 18px;
+}
+.hero-search input {
+  background-color: #fafafa;
+  width: 93%;
+  height: 50px;
+
+  font-size: 14px;
+  border: 0;
+  border-radius: 4px;
+  /* bg */
+  background-image: url(content/search.png);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position-y: center;
+  background-position-x: 13px;
+  padding-left: 45px;
+}
+.hero-search input:focus {
+  outline: none;
+  background-color: #ffffff;
+}
+
+.bottomText p {
+  font-size: 15px;
+  font-weight: 400;
+}
+.bottomText a {
+  text-decoration: none;
+  color: #cecece;
+}
+.bottomText a:hover {
+  color: #ffffff;
+}
+.sponsor {
+  display: flex;
+  position: relative;
+  bottom: -60px;
+  padding: 0 20px;
+  justify-content: space-evenly;
+}
+.sponsor p {
+  color: #ffffff;
+  font-size: 13px;
+}
+.sponsor-flex {
+  flex: 33.33%;
+}
+.sponsor-img {
+  width: 160px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding: 0 20px;
+  margin-bottom: -40px;
+}
+@media (min-width: 1367px) {
+  .sponsor-img {
+    margin-bottom: 270px;
+  }
+}
+
+/* end hero */
+
+/* images */
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.images {
+  width: 430px;
+  padding: 0 7px;
+}
+.images img {
+  max-width: 100%;
+  padding: 6px 0;
+}
+@media (max-width: 991px) {
+  .images {
+    width: 450;
+  }
+}
