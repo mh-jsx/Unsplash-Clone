@@ -369,8 +369,8 @@ body {
   max-width: 100%;
   padding: 6px 0;
 }
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .images {
     width: 450;
   }
-}
+} */
